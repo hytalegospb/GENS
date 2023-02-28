@@ -56,10 +56,10 @@
 
 **Сюжетное демо**
 
-**GensStoryDEMO** -  https://gamazgenii.github.io/GENS/file/GensStoryDEMO
+**GensStoryDEMO** -  https://hytalegospb.github.io/GENS/file/GensStoryDEMO
 
 **Общее**
 
-**R1** -  [https://gamazgenii.github.io/GENS/file/GENS_R1](https://gamazgenii.github.io/GENS/file/GENS_R1)
+**R1** -  https://hytalegospb.github.io/GENS/file/GENS_R1
 
-0.030 -  [https://gamazgenii.github.io/GENS/file/GENS_0.030](https://gamazgenii.github.io/GENS/file/GENS_0.030)
+0.030 - https://hytalegospb.github.io/GENS/file/GENS_0.030

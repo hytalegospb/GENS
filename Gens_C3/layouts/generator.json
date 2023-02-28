@@ -1,0 +1,253 @@
+{
+	"name": "generator",
+	"layers": [
+		{
+			"name": "Слой 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "monster1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "a1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 449,
+					"instanceVariables": {
+						"monster1": 0,
+						"momster1_upr": 0
+					},
+					"behaviors": {
+						"Машина": {
+							"properties": {
+								"max-speed": 20,
+								"acceleration": 1000,
+								"deceleration": 1000,
+								"steer-speed": 150,
+								"drift-recover": 185,
+								"friction": 0.4,
+								"turn-while-stopped": false,
+								"set-angle": true,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 8,
+						"y": 8,
+						"width": 16,
+						"height": 16,
+						"originX": 0.25,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "somolet",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1116,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -128,
+						"y": 128,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "no_blok",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1117,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 16,
+						"y": -8,
+						"width": 32,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "b1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "a1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1118,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.5,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 16,
+						"y": -32,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Спрайт30",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 524,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 36,
+						"y": 12,
+						"width": 24,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 633673102526972,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 151912999124829,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 480,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": null
+}

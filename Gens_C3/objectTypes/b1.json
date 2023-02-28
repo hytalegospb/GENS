@@ -1,0 +1,149 @@
+{
+	"name": "b1",
+	"plugin-id": "Sprite",
+	"sid": 896664864119771,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 854730254543919
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2211107,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 142919408394846,
+				"name": "a1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3715001,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 615631720512116,
+				"name": "a2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2106478,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0.9523809523809523,
+								0.5,
+								0.9523809523809523,
+								0,
+								0.9523809523809523,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 226025192948887,
+				"name": "a3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

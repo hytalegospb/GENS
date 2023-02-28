@@ -1,0 +1,46 @@
+{
+	"name": "bonus_opt",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 937418193261390
+				}
+			],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "sl",
+					"sid": 352074298983997,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "sl",
+					"sid": 806677355429875,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "add-key",
+					"objectClass": "sl",
+					"sid": 669907091018924,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 635188038639089
+		}
+	],
+	"sid": 449513333231563
+}

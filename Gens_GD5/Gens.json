@@ -1,0 +1,270 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": false,
+    "folderProject": true,
+    "orientation": "default",
+    "packageName": "com.gens",
+    "pixelsRounding": true,
+    "projectUuid": "3f13803d-cd22-4ac7-a71e-1ef16c34ff81",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "GENS             ",
+    "author": "",
+    "windowWidth": 800,
+    "windowHeight": 600,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 60,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "authorIds": [
+      "SRpUmxpSPKQfTXDcpwsWojBfLUy1"
+    ],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "a1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "a1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "DTM-Mono.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "DTM-Mono.otf",
+        "userAdded": true
+      },
+      {
+        "file": "retro.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "retro.otf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewObject-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewObject-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "12.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "12.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "13.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "13.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "g1-default-000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "g1-default-000.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "g1-default-0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "g1-default-0002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "6610.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "6610.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "mus_cymbal.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "mus_cymbal.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "003.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "003.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "9патч.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "9патч.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "NewFile.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 3\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":1.01,\\\"sustain\\\":0.8300000000000001,\\\"sustainPunch\\\":0,\\\"decay\\\":2.19,\\\"tremoloDepth\\\":72,\\\"tremoloFrequency\\\":846,\\\"frequency\\\":5600,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":60.6,\\\"frequencyJump1Onset\\\":45,\\\"frequencyJump1Amount\\\":-85,\\\"frequencyJump2Onset\\\":70,\\\"frequencyJump2Amount\\\":25,\\\"harmonics\\\":1,\\\"harmonicsFalloff\\\":0.54,\\\"waveform\\\":\\\"sawtooth\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":5900,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":9700,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NewFile\"}}",
+        "name": "NewFile.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "NewFile2.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Blip/select 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":0,\\\"decay\\\":0.02,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1400,\\\"frequencySweep\\\":0,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"tangent\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":45,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NewFile2\"}}",
+        "name": "NewFile2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "a1.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "a1.json",
+        "userAdded": true
+      },
+      {
+        "file": "NewFile3.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 3\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":1.47,\\\"sustain\\\":0,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":7,\\\"frequency\\\":3500,\\\"frequencySweep\\\":4100,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":71.8,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":-5,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.52,\\\"waveform\\\":\\\"brownnoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":39,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":-1,\\\"lowPassCutoff\\\":2500,\\\"lowPassCutoffSweep\\\":1200,\\\"highPassCutoff\\\":1100,\\\"highPassCutoffSweep\\\":7500,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NewFile3\"}}",
+        "name": "NewFile3.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "speed",
+      "type": "string",
+      "value": "0.5"
+    },
+    {
+      "name": "sp",
+      "type": "string",
+      "value": "1"
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start4"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start5"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/opt"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/map"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/linearmovement"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}

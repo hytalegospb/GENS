@@ -1,0 +1,342 @@
+{
+	"name": "start_map",
+	"layers": [
+		{
+			"name": "Слой 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "g1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "a1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 8,
+					"instanceVariables": {
+						"s": 0
+					},
+					"behaviors": {
+						"Пуля": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -96,
+						"y": 272,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Спрайт25",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Пульс": {
+							"parameters": {
+								"intensity": 1,
+								"lighting": 0.5,
+								"speed": 1,
+								"frequency": 200,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 640,
+						"height": 480,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 922288140309784,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ef",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 818016670065443,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "player",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Спрайт26",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "a1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 304,
+						"y": 664,
+						"width": 272,
+						"height": 384,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 350796738458362,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ef2",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Спрайт27",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 478,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -96,
+						"y": 320,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 141214803755384,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "dialog",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 115142095703147,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 532180714876822,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 480,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "start_map"
+}

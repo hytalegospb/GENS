@@ -1,0 +1,170 @@
+{
+	"name": "g1",
+	"plugin-id": "Sprite",
+	"sid": 680600697548894,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "s",
+			"type": "number",
+			"desc": "",
+			"sid": 615823436843527
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 323024419925851
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 264094933626577
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Направлений",
+			"sid": 535028451724724
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3382278,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.9375,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 445422723769284,
+				"name": "a1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 36,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7666680,
+						"collisionPoly": {
+							"points": [
+								0.27638888888888913,
+								0.37857142857142867,
+								0.7999999999999997,
+								0.37976190476190497,
+								0.7958333333333331,
+								0.8726190476190474,
+								0.2847222222222221,
+								0.8714285714285714
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 825063412267156,
+				"name": "a2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 20
+			},
+			{
+				"frames": [
+					{
+						"width": 36,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2573476,
+						"collisionPoly": {
+							"points": [
+								0.2791666666666666,
+								0.38333333333333347,
+								0.7847222222222217,
+								0.38928571428571457,
+								0.7930555555555555,
+								0.8714285714285713,
+								0.2819444444444445,
+								0.876190476190476
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 36,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6844982,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 522647109845455,
+				"name": "a3",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

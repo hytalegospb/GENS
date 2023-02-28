@@ -1,0 +1,1791 @@
+{
+	"name": "open_bonus",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "open_bonus_system",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 618533793293384
+		},
+		{
+			"eventType": "variable",
+			"name": "b_map",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 274398024411267
+		},
+		{
+			"eventType": "variable",
+			"name": "b1_k1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 329809951051643
+		},
+		{
+			"eventType": "variable",
+			"name": "b1_k2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 189567625412602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 436684947917418,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 259037773037949
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 717457247329066,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 396735309431955
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 433272965611433,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 497103711622906,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 873870048288159,
+					"parameters": {
+						"variable": "b1_k1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 278850429201135
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 606869302344511,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"bonus\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "ef",
+					"sid": 985445309242937,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 338417572571496,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "50",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 448767527474114,
+					"parameters": {
+						"object-to-create": "op1_a1",
+						"layer": "\"bonus\"",
+						"x": "-408",
+						"y": "48",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 789960920307298,
+					"parameters": {
+						"object-to-create": "op1_a4",
+						"layer": "\"bonus\"",
+						"x": "-344",
+						"y": "108",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "op1_a4",
+					"sid": 676505266060307,
+					"parameters": {
+						"animation": "\"a1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 621111339323639,
+					"parameters": {
+						"object-to-create": "op1_a2",
+						"layer": "\"bonus\"",
+						"x": "-280",
+						"y": "64",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 975065577908519,
+					"parameters": {
+						"object-to-create": "op1_a3",
+						"layer": "\"bonus\"",
+						"x": "-384",
+						"y": "176",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a2",
+					"sid": 113884669415842,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a3",
+					"sid": 870435402069890,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a4",
+					"sid": 284625779997263,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "op1_a2",
+					"sid": 805903470794601,
+					"parameters": {
+						"text": "\"Пузыри\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "op1_a3",
+					"sid": 746477102908814,
+					"parameters": {
+						"text": "\"Они такие мыльные\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 482019280693479,
+					"parameters": {
+						"audio-file": "open_bonus",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op1_a1",
+					"sid": 342989173200619,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "120",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 801385034661304,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op1_a1",
+					"sid": 561371094770536,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "700",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 508330031638364,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 609151648112802,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 780970355186641,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 933914678106275,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 771033785865376,
+					"parameters": {
+						"variable": "b1_k1",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 502773475911182,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 909288196573222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 988594725296081,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 731213209075406,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 809498049601590,
+					"parameters": {
+						"variable": "b1_k1",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 191521324449108,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 542494433162528,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 993045567397289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 598188243267273,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 167738131598995,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 612726151276337,
+					"parameters": {
+						"variable": "b1_k1",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 530715219824005,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 286244942516103,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 317979901719111
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 971072663919276,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 342170361238201,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 416516921935966,
+					"parameters": {
+						"variable": "b1_k1",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 630255458546223,
+					"parameters": {
+						"key": "\"o_b1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 376978893565218,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 186498021794688
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 344964539581621,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 846752638799876,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 555139260742702,
+					"parameters": {
+						"variable": "b1_k2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 308844883663359
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 127776588025287,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"bonus\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "ef",
+					"sid": 772210593048659,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 266648721185558,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "50",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 216518891862700,
+					"parameters": {
+						"object-to-create": "op1_a1",
+						"layer": "\"bonus\"",
+						"x": "-408",
+						"y": "48",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 864186749777982,
+					"parameters": {
+						"object-to-create": "op1_a4",
+						"layer": "\"bonus\"",
+						"x": "-344",
+						"y": "108",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "op1_a4",
+					"sid": 429035345129502,
+					"parameters": {
+						"animation": "\"a2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 827690671756388,
+					"parameters": {
+						"object-to-create": "op1_a2",
+						"layer": "\"bonus\"",
+						"x": "-280",
+						"y": "64",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 231480061300280,
+					"parameters": {
+						"object-to-create": "op1_a3",
+						"layer": "\"bonus\"",
+						"x": "-384",
+						"y": "176",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a2",
+					"sid": 266052959271722,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a3",
+					"sid": 496047926027443,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op1_a4",
+					"sid": 998146188267711,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op1_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "op1_a2",
+					"sid": 581277210204486,
+					"parameters": {
+						"text": "\"Я меняюсь\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "op1_a3",
+					"sid": 844964125673038,
+					"parameters": {
+						"text": "\"Осторожно с этим... Вы можете поменяться неприаскаизуемо\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 188635197478229,
+					"parameters": {
+						"audio-file": "open_bonus",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op1_a1",
+					"sid": 227568556512605,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "120",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 611523190758463,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op1_a1",
+					"sid": 296116632426516,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "700",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 732359370218986,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 447107710742608,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 589445823323245,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 687421653269739,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 560069500928426,
+					"parameters": {
+						"variable": "b1_k2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 507654363392125,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 626636987936895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 950576529440103,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 512839619386694,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 955185192173635,
+					"parameters": {
+						"variable": "b1_k2",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 117223237288701,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 854942943203069,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 130931413898206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 549572499324363,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 550256434462428,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 694328641099836,
+					"parameters": {
+						"variable": "b1_k2",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 161518933232689,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 489995051716615,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 592710890093790
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 585606227674225,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 975161927592581,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 624082513705005,
+					"parameters": {
+						"variable": "b1_k2",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 422224207991795,
+					"parameters": {
+						"key": "\"o_b2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 797462130404380,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 701420541776900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 471877181278986,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 188944429850677,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 828990406169484,
+					"parameters": {
+						"variable": "b_map",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 135334030952990
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 823191350854499,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 549718853462265,
+					"parameters": {
+						"tag": "\"a1\"",
+						"state": "pause"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 672576155756769,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 176671666312694,
+					"parameters": [
+						"\"Эй...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 934101034426209,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 529763716648800,
+					"parameters": [
+						"\"Я вимжу ты прошёл сюжет... Ты молодец...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 611229918761232,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 868956330039154,
+					"parameters": [
+						"\"Смотри что я для тебя приготовил...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 824002151574474,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 600009257665063,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 365882902708294,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"bonus\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "ef",
+					"sid": 513244625997948,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 540375550514058,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "50",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 225345533866514,
+					"parameters": {
+						"object-to-create": "op2_a1",
+						"layer": "\"bonus\"",
+						"x": "-408",
+						"y": "48",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 123205198436252,
+					"parameters": {
+						"object-to-create": "op2_a3",
+						"layer": "\"bonus\"",
+						"x": "-208",
+						"y": "148",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 520437755839515,
+					"parameters": {
+						"object-to-create": "op2_a2",
+						"layer": "\"bonus\"",
+						"x": "-384",
+						"y": "256",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op2_a3",
+					"sid": 783642541176225,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op2_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "op2_a2",
+					"sid": 303669048476442,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "op2_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "op2_a2",
+					"sid": 930512070675108,
+					"parameters": {
+						"text": "\"УРА - Новый мир теперь открыт.\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 569011942997533,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 774236862913174,
+					"parameters": {
+						"audio-file": "open_bonus2",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op2_a1",
+					"sid": 889805627708824,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "120",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 753940931237945,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "op2_a1",
+					"sid": 824481470544031,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "700",
+						"time": "1",
+						"ease": "easeinoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 490025555157444,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "ef",
+					"sid": 391384542799413,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 865146475581004,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 135329053449159,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 180081936628341,
+					"parameters": {
+						"variable": "b_map",
+						"value": "1"
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 194816081457940,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 467287298938816,
+					"parameters": [
+						"\"ВИДАЛ???\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 324159649357357,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 138886771455942,
+					"parameters": [
+						"\"Неожидано да???\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 609438869433798,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 602106938060119,
+					"parameters": [
+						"\"Такие вещи будут происходить всегда. Так что берегись...\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 358484605066561,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 945648700239819,
+					"parameters": [
+						"\"Для того чтобы узнать подробнее об этих бонусах пройди обучение под названием <<бонусы>>\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 729003112547534,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"callFunction": "TypeText",
+					"sid": 119092859908121,
+					"parameters": [
+						"\"Удачи!\"",
+						"\"0.1\"",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 590025933485613,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				},
+				{
+					"id": "toggle-boolean-instvar",
+					"objectClass": "d_a2",
+					"sid": 433572378478559,
+					"parameters": {
+						"instance-variable": "tween"
+					}
+				},
+				{
+					"id": "set-paused",
+					"objectClass": "Audio",
+					"sid": 367612417499784,
+					"parameters": {
+						"tag": "\"a1\"",
+						"state": "resume"
+					}
+				},
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 360166078269913,
+					"parameters": {
+						"key": "\"bonus_opt\"",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 814174862155277,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 488298289765363,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 545257983993506
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 289977472279014,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 127862757158942,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 896010194662185,
+					"parameters": {
+						"variable": "b_map",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 220503969772878,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 207305146901980,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 892481387792963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 971794799138023,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 341881461456422,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 740957499345093,
+					"parameters": {
+						"variable": "b_map",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 771013293298963,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 354263775772388,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 678621724808467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 392188030194789,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "compare-value",
+					"objectClass": "sl",
+					"sid": 732670782105561,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 490354846851754,
+					"parameters": {
+						"variable": "b_map",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 719604213654569,
+					"parameters": {
+						"key": "\"o_b3\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 604596550337842,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "20"
+					}
+				}
+			],
+			"sid": 952028916638063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 867541999732455,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "4"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 738396717982938,
+					"parameters": {
+						"variable": "b1_k1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 776814721327760,
+					"parameters": {
+						"variable": "b1_k2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 891146011818568
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 599087520715675,
+					"parameters": {
+						"object-to-create": "a1",
+						"layer": "0",
+						"x": "0",
+						"y": "240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "a1",
+					"sid": 933513904861670,
+					"parameters": {
+						"text": "\"Бонуссы закончились\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 471849174590924,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "a1",
+					"sid": 453709416081294
+				}
+			],
+			"sid": 628399890663910
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 320383056010071,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"comparison": 0,
+						"value": "20"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 894829530153737,
+					"parameters": {
+						"variable": "open_bonus_system",
+						"value": "floor(random(1, 4))"
+					}
+				}
+			],
+			"sid": 765032484812238
+		}
+	],
+	"sid": 160641274401766
+}

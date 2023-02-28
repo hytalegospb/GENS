@@ -1,0 +1,382 @@
+{
+	"name": "dev",
+	"layers": [
+		{
+			"name": "Слой 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "is1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 525,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 304,
+						"height": 224,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "is2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1119,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 0,
+						"width": 304,
+						"height": 224,
+						"originX": 1,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "is3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1120,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 480,
+						"width": 304,
+						"height": 224,
+						"originX": 0,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "is4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1121,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 640,
+						"y": 480,
+						"width": 304,
+						"height": 224,
+						"originX": 1,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "l1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1123,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": -32,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 491281631859928,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.9568627450980393,
+				0.6,
+				0.6392156862745098,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "ef",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 779975612995550,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "player",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1122,
+					"instanceVariables": {
+						"lol": 0
+					},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"СледитьЗа": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"Платформер": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": false
+							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-4",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Твинанимация": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 320,
+						"y": 208,
+						"width": 48,
+						"height": 64,
+						"originX": 0.48484848484848486,
+						"originY": 0.5161290322580645,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "l2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1124,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 480,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 631033657755554,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 921099986220317,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 480,
+	"unboundedScrolling": true,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "dev"
+}

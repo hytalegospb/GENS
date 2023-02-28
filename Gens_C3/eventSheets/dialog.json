@@ -1,0 +1,664 @@
+{
+	"name": "dialog",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 820731772358211
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 225764261389188,
+					"parameters": {
+						"object-to-create": "d_a1",
+						"layer": "\"dialog\"",
+						"x": "0",
+						"y": "480",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 405489400820786,
+					"parameters": {
+						"object-to-create": "d_a2",
+						"layer": "\"dialog\"",
+						"x": "16",
+						"y": "496",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 172233106423772,
+					"parameters": {
+						"object-to-create": "d_a3",
+						"layer": "\"dialog\"",
+						"x": "528",
+						"y": "496",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "d_a2",
+					"sid": 210401352918103,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "d_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "d_a3",
+					"sid": 827190987457857,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "d_a1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 599819862241646
+		},
+		{
+			"functionName": "TypeText",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Текст",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 235608368273947
+				},
+				{
+					"name": "Скорость",
+					"type": "string",
+					"initialValue": "\"0.02\"",
+					"comment": "",
+					"sid": 221150489263432
+				},
+				{
+					"name": "Герой",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 588467893441781
+				},
+				{
+					"name": "Блокировка",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 971975203242996
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 226871408157308,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-tw-params",
+					"objectClass": "d_a2",
+					"sid": 491372004765299,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"params": "\"duration type \" & Скорость"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "d_a2",
+					"sid": 806598868341814,
+					"parameters": {
+						"instance-variable": "pl",
+						"value": "Герой"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "d_a2",
+					"sid": 184827778409383,
+					"parameters": {
+						"instance-variable": "d",
+						"value": "Блокировка"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 702688932807371
+				},
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 930808898666446,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "Текст"
+					}
+				}
+			],
+			"sid": 821927796682318
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 574118028557122,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 222925216445268,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 345034480587943,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 384225704836858
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 689596872646379,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 978989290516930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 550723882527383,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 773732014271743,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 258310876111761,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 988646730570176
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 612151393273531,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 525911818937150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 358792650248028,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 782243611868012,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 442937081910289,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 260799039931229
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 187209784588939,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 755505321503759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 810210083661136,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "d_a2",
+					"sid": 973153080145795,
+					"parameters": {
+						"instance-variable": "d",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "typewrite",
+					"objectClass": "d_a2",
+					"sid": 469982818349389,
+					"behaviorType": "AnimatorText",
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 768349257721568
+				},
+				{
+					"id": "signal",
+					"objectClass": "System",
+					"sid": 719897089551478,
+					"parameters": {
+						"tag": "\"go\""
+					}
+				}
+			],
+			"sid": 156394279613142
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "pl",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 421337358524165,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 731075173145892,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 421956515856074,
+							"parameters": {
+								"instance-variable": "pl",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 783882837281511,
+							"parameters": {
+								"audio-file": "text",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 565119848483322,
+							"parameters": {
+								"animation": "\"a3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 774123878287309
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 488457267631554,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 217492436380309,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 436530574997338,
+							"parameters": {
+								"instance-variable": "pl",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 132336527090008,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 782045443417993,
+							"parameters": {
+								"animation": "\"a4\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 475747784701554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 876705564761535,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 286404284431619,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 384343589629426,
+							"parameters": {
+								"instance-variable": "pl",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 385801957239980,
+							"parameters": {
+								"audio-file": "text3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 732402870980463,
+							"parameters": {
+								"tag": "\"\"",
+								"playback-rate": "1.5"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "d_a3",
+							"sid": 451993580026108,
+							"parameters": {
+								"animation": "\"a5\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 542256485209901
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-letter-typed",
+							"objectClass": "d_a2",
+							"sid": 453403930734670,
+							"behaviorType": "AnimatorText"
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 725054688203211,
+							"parameters": {
+								"first-value": "d_a2.AnimatorText.LastLetter",
+								"comparison": 1,
+								"second-value": "\" \""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "d_a2",
+							"sid": 595995383820218,
+							"parameters": {
+								"instance-variable": "pl",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 533661674579134
+				}
+			],
+			"sid": 478570096021417
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "pl2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "d_a2",
+							"sid": 705972237781012,
+							"parameters": {
+								"instance-variable": "tween"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "d_a1",
+							"sid": 670897850977485,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "480",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 456551883173160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "d_a2",
+							"sid": 308518758382402,
+							"parameters": {
+								"instance-variable": "tween"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "d_a1",
+							"sid": 427153241625910,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "368",
+								"time": "0.1",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 912508472854798
+				}
+			],
+			"sid": 340332877688071
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 767379033900251
+		}
+	],
+	"sid": 364032950707502
+}

@@ -1,0 +1,190 @@
+{
+	"name": "dev",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 444752481743193
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "player",
+					"sid": 697959602132098,
+					"behaviorType": "СледитьЗа",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 128267554570586
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 965545838817994,
+					"parameters": {
+						"object": "l1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 163230845066022,
+					"parameters": {
+						"y": "scrollY-480"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "l1",
+					"sid": 884141064551993,
+					"parameters": {
+						"x": "l1.X",
+						"y": "l1.Y-480"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 501984459240764,
+					"parameters": {
+						"object-to-create": "is1",
+						"layer": "0",
+						"x": "scrollX-320",
+						"y": "scrollY-240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 610499083582930,
+					"parameters": {
+						"object-to-create": "is2",
+						"layer": "0",
+						"x": "scrollX+320",
+						"y": "scrollY-240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 739199404441845,
+					"parameters": {
+						"object-to-create": "is3",
+						"layer": "0",
+						"x": "scrollX-320",
+						"y": "scrollY+240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 150542628782947,
+					"parameters": {
+						"object-to-create": "is4",
+						"layer": "0",
+						"x": "scrollX+320",
+						"y": "scrollY+240",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 465952010008904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 814329429761060,
+					"parameters": {
+						"object": "l2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 541402061835155,
+					"parameters": {
+						"y": "scrollY+480"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "l2",
+					"sid": 239917549477922,
+					"parameters": {
+						"x": "l1.X",
+						"y": "l1.Y+480"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 490918404419900,
+					"parameters": {
+						"object-to-create": "is1",
+						"layer": "0",
+						"x": "scrollX-320",
+						"y": "scrollY-240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 414052380961354,
+					"parameters": {
+						"object-to-create": "is2",
+						"layer": "0",
+						"x": "scrollX+320",
+						"y": "scrollY-240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 871294708577462,
+					"parameters": {
+						"object-to-create": "is3",
+						"layer": "0",
+						"x": "scrollX-320",
+						"y": "scrollY+240",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 378714916359949,
+					"parameters": {
+						"object-to-create": "is4",
+						"layer": "0",
+						"x": "scrollX+320",
+						"y": "scrollY+240",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 634360393374135
+		}
+	],
+	"sid": 751553282357928
+}

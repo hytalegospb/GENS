@@ -1,0 +1,31 @@
+{
+	"name": "m1_b_op",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 568500903536485,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-key",
+					"objectClass": "sl",
+					"sid": 941150173694144,
+					"parameters": {
+						"key": "\"o_b\"&floor(random(5))",
+						"value": "floor(random(2))"
+					}
+				}
+			],
+			"sid": 743158141437880
+		}
+	],
+	"sid": 431463815444642
+}

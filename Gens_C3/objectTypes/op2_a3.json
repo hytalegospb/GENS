@@ -1,0 +1,55 @@
+{
+	"name": "op2_a3",
+	"plugin-id": "Sprite",
+	"sid": 197622952314011,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 128781583425945
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 216,
+						"height": 99,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6388532,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 216,
+						"height": 99,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 667083,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 237019648722771,
+				"name": "a1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

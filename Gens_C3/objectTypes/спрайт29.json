@@ -1,0 +1,68 @@
+{
+	"name": "Спрайт29",
+	"plugin-id": "Sprite",
+	"sid": 655321566776933,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 519097811699174
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 880165702232041
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6328078,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.4878048780487803,
+								0,
+								1,
+								0,
+								1,
+								0.4923780487804883,
+								1,
+								1,
+								0.4984756097560975,
+								1,
+								0,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 148150755881376,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

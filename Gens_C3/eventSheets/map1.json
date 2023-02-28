@@ -1,0 +1,166 @@
+{
+	"name": "map1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "map_bl",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 528861131623849
+		},
+		{
+			"eventType": "comment",
+			"text": "Генерация"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "map_gen"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "rubs"
+		},
+		{
+			"eventType": "comment",
+			"text": "Бонусы"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "bonus_opt"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "open_bonus"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "m1_b_op"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "m1_b"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "dialog"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "pogoda"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 812794999607947
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 387193543750050,
+					"parameters": {
+						"object-to-create": "ef",
+						"layer": "\"ef\"",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 929920729370692,
+					"parameters": {
+						"variable": "map_bl",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait-for-signal",
+					"objectClass": "System",
+					"sid": 224347040979855,
+					"parameters": {
+						"tag": "\"start\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "map_loading",
+					"sid": 663552555910697,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "ef",
+					"sid": 310064610209913
+				}
+			],
+			"sid": 204455544327896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Key",
+					"sid": 199374022367834,
+					"parameters": {
+						"key": 77
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 970904949377979,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 813937671950588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "b1",
+					"sid": 451326848698950,
+					"parameters": {
+						"object": "no_blok"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play-at-object",
+					"objectClass": "Audio",
+					"sid": 492998773877733,
+					"parameters": {
+						"audio-file": "boom",
+						"loop": "not-looping",
+						"volume": "0",
+						"object": "b1",
+						"inner-angle": "360",
+						"outer-angle": "360",
+						"outer-gain": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 595319816798069
+		}
+	],
+	"sid": 471144593671933
+}

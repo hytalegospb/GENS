@@ -1,0 +1,615 @@
+{
+	"name": "m1_b",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "m1_b_a1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 265090114046660
+		},
+		{
+			"eventType": "variable",
+			"name": "m1_b_a2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 458100049877356
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 657614878582182,
+					"parameters": {
+						"variable": "m1_b_a1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 477786073364823
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 206854035899213,
+					"parameters": {
+						"seconds": "random(20)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 151090613894685,
+					"parameters": {
+						"variable": "m1_b_a1",
+						"value": "floor(random(1, 3))"
+					}
+				}
+			],
+			"sid": 966599151023361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 321911974365777,
+					"parameters": {
+						"variable": "m1_b_a1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 574142492882502
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 489807508440739,
+					"parameters": {
+						"variable": "m1_b_a2",
+						"value": "floor(random(1, 3))"
+					}
+				}
+			],
+			"sid": 907933355246338,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 648714812842443,
+							"parameters": {
+								"variable": "m1_b_a2",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 652078476631482,
+							"parameters": {
+								"variable": "b1_k1",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 107760445660327
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 736899234625297,
+							"parameters": {
+								"variable": "m1_b_a1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 214559038278604,
+							"parameters": {
+								"object-to-create": "somolet",
+								"layer": "0",
+								"x": "random(1000)",
+								"y": "1100",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 665356565902127,
+							"parameters": {
+								"audio-file": "samolet",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "somolet",
+							"sid": 267039227029810,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-200",
+								"time": "5",
+								"ease": "default",
+								"destroy-on-complete": "yes",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 200741250330110,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 213442776822054,
+							"parameters": {
+								"object-to-create": "no_blok",
+								"layer": "0",
+								"x": "somolet.X",
+								"y": "random(1000)",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 497452651480727,
+							"parameters": {
+								"object-to-create": "b1",
+								"layer": "0",
+								"x": "no_blok.X",
+								"y": "-500",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b1",
+							"sid": 607791404530934,
+							"parameters": {
+								"animation": "\"a1\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 548071978374832,
+							"parameters": {
+								"seconds": "9"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "no_blok",
+							"sid": 458816260865575,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b1",
+							"sid": 547374712144717,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						}
+					],
+					"sid": 567107659942833
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 947315187300571,
+							"parameters": {
+								"variable": "m1_b_a2",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 982137353819704,
+							"parameters": {
+								"variable": "b1_k1",
+								"comparison": 1,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 187352641029780,
+							"parameters": {
+								"variable": "m1_b_a1",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 448001059546362
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 546346455367039,
+							"parameters": {
+								"variable": "m1_b_a2",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 678116277902137,
+							"parameters": {
+								"variable": "b1_k2",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 130096715447396
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 803690520722392,
+							"parameters": {
+								"variable": "m1_b_a1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 604102736004564,
+							"parameters": {
+								"object-to-create": "somolet",
+								"layer": "0",
+								"x": "random(1000)",
+								"y": "1100",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 244818246774593,
+							"parameters": {
+								"audio-file": "samolet",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "somolet",
+							"sid": 639077305368498,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetY",
+								"end-value": "-200",
+								"time": "5",
+								"ease": "default",
+								"destroy-on-complete": "yes",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 878160702018836,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 125220116493746,
+							"parameters": {
+								"object-to-create": "no_blok",
+								"layer": "0",
+								"x": "somolet.X",
+								"y": "random(1000)",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 182687072406661,
+							"parameters": {
+								"object-to-create": "b1",
+								"layer": "0",
+								"x": "no_blok.X",
+								"y": "-500",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "b1",
+							"sid": 988115722849295,
+							"parameters": {
+								"animation": "\"a2\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 720777333267963,
+							"parameters": {
+								"seconds": "9"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "no_blok",
+							"sid": 262295492011904,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "b1",
+							"sid": 746149718923928,
+							"behaviorType": "Физика",
+							"parameters": {
+								"mode": "disabled"
+							}
+						}
+					],
+					"sid": 219522338377603
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 419260708146299,
+							"parameters": {
+								"variable": "m1_b_a2",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 605204089707571,
+							"parameters": {
+								"variable": "b1_k2",
+								"comparison": 1,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 761653090112713,
+							"parameters": {
+								"variable": "m1_b_a1",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 996733792552264
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 666741438210456,
+					"parameters": {
+						"variable": "m1_b_a1",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 213478982582109,
+					"parameters": {
+						"variable": "m1_b_a1",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 882480096840875
+		},
+		{
+			"eventType": "comment",
+			"text": "Работа бонусов блоков"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 871508726905656,
+					"parameters": {
+						"object": "b1"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "b1",
+					"sid": 184802210836753,
+					"parameters": {
+						"animation": "\"a1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "b1",
+					"sid": 878172407118046
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 203216820396385,
+					"parameters": {
+						"object-to-create": "Спрайт30",
+						"layer": "0",
+						"x": "player.X+16",
+						"y": "player.Y-16",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "Спрайт30",
+					"sid": 181008583077613,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetY",
+						"end-value": "Спрайт30.Y-200",
+						"time": "5",
+						"ease": "default",
+						"destroy-on-complete": "yes",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 912156109075033
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 868423185076597,
+					"parameters": {
+						"object": "b1"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "b1",
+					"sid": 652222839695538,
+					"parameters": {
+						"animation": "\"a2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "b1",
+					"sid": 284726542995532
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "player",
+					"sid": 880879762792015,
+					"behaviorType": "Твинанимация",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "player.Width+20",
+						"end-y": "player.Height+20",
+						"time": "0.1",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 854233938453533,
+					"parameters": {
+						"audio-file": "smb_powerup",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 589927450646897
+		}
+	],
+	"sid": 375840687463666
+}

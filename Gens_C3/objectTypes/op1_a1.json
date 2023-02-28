@@ -1,0 +1,26 @@
+{
+	"name": "op1_a1",
+	"plugin-id": "NinePatch",
+	"sid": 787984573136897,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Твинанимация",
+			"sid": 406466466969266
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8060667,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"name": "d_a2",
+	"plugin-id": "Text",
+	"sid": 904157627665557,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 667917268119578
+		},
+		{
+			"name": "pl",
+			"type": "number",
+			"desc": "",
+			"sid": 700642887233870
+		},
+		{
+			"name": "d",
+			"type": "number",
+			"desc": "",
+			"sid": 159666646774034
+		},
+		{
+			"name": "IsTyping",
+			"type": "boolean",
+			"desc": "",
+			"sid": 329685273498946
+		},
+		{
+			"name": "tween",
+			"type": "boolean",
+			"desc": "",
+			"sid": 882418512515145
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 593385562241424
+		},
+		{
+			"behaviorId": "skymen_Skymen_SpritefontDX",
+			"name": "AnimatorText",
+			"sid": 761354746994795
+		}
+	],
+	"effectTypes": []
+}

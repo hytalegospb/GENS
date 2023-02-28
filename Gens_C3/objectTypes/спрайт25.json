@@ -1,0 +1,54 @@
+{
+	"name": "Спрайт25",
+	"plugin-id": "Sprite",
+	"sid": 348713496433966,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "pulse",
+			"name": "Пульс"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1280,
+						"height": 720,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3380556,
+						"collisionPoly": {
+							"points": [
+								0.4578124999999999,
+								0.4833333333333335,
+								0.5351562500000002,
+								0.48333333333333317,
+								0.5429687499999996,
+								0.6597222222222229,
+								0.4578125000000003,
+								0.652777777777778
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 282854814457151,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

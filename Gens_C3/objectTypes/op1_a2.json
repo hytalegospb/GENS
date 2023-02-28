@@ -1,0 +1,15 @@
+{
+	"name": "op1_a2",
+	"plugin-id": "Text",
+	"sid": 868082937464278,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 324524427486077
+		}
+	],
+	"effectTypes": []
+}

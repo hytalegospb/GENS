@@ -4,7 +4,7 @@
 
 **GENS R3 - ИГРАТЬ ОЛАЙН**
 
-**https://hytalegospb.github.io/file/play/GENS_R3/**
+**https://hytalegospb.github.io/file/play/GENS_R3**
 
 **Наслаждайтесь**
 

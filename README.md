@@ -2,6 +2,13 @@
 
 **Друзья. В связи с тем что скоро Construct 3 нельзя будет нормально пользоваться так как разработчики решили всё нам нагадить то версия R3 скорее всего будет посследний. Выпуск этой версии будет уже на этой неделе. После этого будем наблюдать за ситуацием. Если всё будет плохо я перейду к другим более мелким проектам.**
 
+**GENS R3 - ИГРАТЬ ОЛАЙН**
+**https://hytalegospb.github.io/file/play/GENS_R3/**
+**Наслаждайтесь**
+
+**GENS R3 - Скачать**
+**СКОРО**
+
 **Разработка проекта ВОЗОБНОВЛЕНА**
 ===========================================================
 
@@ -91,18 +98,18 @@
 
 **Первоапрельские шутки**
 
-**R2ALFA** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA
+**R2ALFA** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA - **Временно не доступно**
 
-**R2ALFA_FIX** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA_FIX
+**R2ALFA_FIX** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA_FIX - **Временно не доступно**
 
 **Сюжетное демо**
 
-**GensStoryDEMO** -  https://hytalegospb.github.io/GENS/file/GensStoryDEMO
+**GensStoryDEMO** -  https://hytalegospb.github.io/GENS/file/GensStoryDEMO - **Временно не доступно**
 
 **Общее**
 
-**R1** -  https://hytalegospb.github.io/GENS/file/GENS_R1
+**R1** -  https://hytalegospb.github.io/GENS/file/GENS_R1 - **Временно не доступно**
 
 **R2** -  https://hytalegospb.github.io/GENS/file/GENS_R2 **Временно не доступно**
 
-**0.030** - https://hytalegospb.github.io/GENS/file/GENS_0.030
+**0.030** - https://hytalegospb.github.io/GENS/file/GENS_0.030 - **Временно не доступно**

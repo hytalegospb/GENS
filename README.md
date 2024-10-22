@@ -12,7 +12,7 @@
 
 **GENS R3 - Скачать**
 
-**СКОРО**
+**https://github.com/hytalegospb/GENS/releases/tag/R3**
 
 
 **Разработка проекта ВОЗОБНОВЛЕНА**

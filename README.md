@@ -107,18 +107,18 @@
 
 **Первоапрельские шутки**
 
-**R2ALFA** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA - **Временно не доступно**
+**R2ALFA** -  https://hytalegospb.github.io/file/play/GENS_R2ALFA - **Временно не доступно**
 
-**R2ALFA_FIX** -  https://hytalegospb.github.io/GENS/file/GENS_R2ALFA_FIX - **Временно не доступно**
+**R2ALFA_FIX** -  https://hytalegospb.github.io/file/play/GENS_R2ALFA_FIX - **Временно не доступно**
 
 **Сюжетное демо**
 
-**GensStoryDEMO** -  https://hytalegospb.github.io/GENS/file/GensStoryDEMO - **Временно не доступно**
+**GensStoryDEMO** -  https://hytalegospb.github.io/file/play/GensStoryDEMO - **Временно не доступно**
 
 **Общее**
 
-**R1** -  https://hytalegospb.github.io/GENS/file/GENS_R1 - **Временно не доступно**
+**R1** -  https://hytalegospb.github.io/play/file/GENS_R1 - **Временно не доступно**
 
-**R2** -  https://hytalegospb.github.io/GENS/file/GENS_R2 **Временно не доступно**
+**R2** -  https://hytalegospb.github.io/play/file/GENS_R2 **Временно не доступно**
 
-**0.030** - https://hytalegospb.github.io/GENS/file/GENS_0.030 - **Временно не доступно**
+**0.030** - https://hytalegospb.github.io/play/file/GENS_0.030 - **Временно не доступно**
